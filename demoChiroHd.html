@@ -17,7 +17,9 @@
 <body>
 
     <header>
-        <img src="chirohd_logo.png" alt="ChiroHD Logo" class="logo">
+        <a href="https://www.chirohd.com" target="_blank">
+            <img src="chirohd_logo.png" alt="ChiroHD Logo" class="logo">
+        </a>
     </header>
 
     <section class="hero">
@@ -140,150 +142,225 @@
 
     <section class="testimonials">
         <h2>Trusted by Growing Practices</h2>
-        <div class="testimonial-grid">
-            <!-- 1. Sydney M. -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a12aae1a72bd5a814ec3dc_sydney%20m%400.5x.png"
-                    alt="Sydney M." class="testimonial-avatar">
-                <p class="quote">"I like how clear the schedule is. My favorite feature so far is the ease of scheduling
-                    out a patient for appointments months in advance."</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Sydney M.</p>
-                    <p class="role">AlignLife</p>
+        <div class="carousel-container">
+            <button class="carousel-btn prev" aria-label="Previous Testimonial">❮</button>
+            <div class="carousel-track-wrapper">
+                <div class="testimonial-grid" id="testimonialTrack">
+                    <!-- 1. Sydney M. -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a12aae1a72bd5a814ec3dc_sydney%20m%400.5x.png"
+                            alt="Sydney M." class="testimonial-avatar">
+                        <p class="quote">"I like how clear the schedule is. My favorite feature so far is the ease of
+                            scheduling
+                            out a patient for appointments months in advance."</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Sydney M.</p>
+                            <p class="role">AlignLife</p>
+                        </div>
+                    </div>
+                    <!-- 2. Shane D. -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a126d36265165d6d679779_shade%20d%400.5x.png"
+                            alt="Shane D." class="testimonial-avatar">
+                        <p class="quote">"ChiroHD has helped simplify our office procedures, as well as enhance our patient
+                            experience!"</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Shane D.</p>
+                            <p class="role">Novo Chiropractic</p>
+                        </div>
+                    </div>
+                    <!-- 3. Lacie T. -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a06610432f94f0ea0a57b8_lacie%20t%400.5x.png"
+                            alt="Lacie T." class="testimonial-avatar">
+                        <p class="quote">"Their response time and attention to detail has been some of the best customer
+                            service
+                            work I have seen."</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Lacie T.</p>
+                            <p class="role">Align Life Office Manager</p>
+                        </div>
+                    </div>
+                    <!-- 4. Dr. Kent & Dr. Jocelyn -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a06d2dc1bfe86c75918611_kent%20jocelyn%400.5x.png"
+                            alt="Dr. Kent & Dr. Jocelyn" class="testimonial-avatar">
+                        <p class="quote">"We love the simplicity when training our team ... also love all the features that
+                            help
+                            make running a chiropractic office that much more efficient!"</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Dr. Kent & Dr. Jocelyn</p>
+                            <p class="role">Crossroads Chiropractic</p>
+                        </div>
+                    </div>
+                    <!-- 5. Rebecca S. -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a0629819ddf795aa3df25f_rebecca%20s%400.5x.png"
+                            alt="Rebecca S." class="testimonial-avatar">
+                        <p class="quote">"We have loved this EHR since switching. It has made it so much simpler for our
+                            patients and our team."</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Rebecca S.</p>
+                            <p class="role">LTL Chiropractic</p>
+                        </div>
+                    </div>
+                    <!-- 6. Danielle W. -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a0653908379c1910a1f8aa_danielle%20w%400.5x.png"
+                            alt="Danielle W." class="testimonial-avatar">
+                        <p class="quote">"I've used other softwares for 5+ years and ChiroHD is finally a user friendly
+                            option
+                            that is simple to use and has an incredible team."</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Danielle W.</p>
+                            <p class="role">Eden Family Chiropractic</p>
+                        </div>
+                    </div>
+                    <!-- 7. Dr. Mandee H -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a12d4c65d155b164bff80c_mandee%20h%400.5x.png"
+                            alt="Dr. Mandee H" class="testimonial-avatar">
+                        <p class="quote">"The support and care about how the product works for our office is like no other
+                            company."</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Dr. Mandee H</p>
+                            <p class="role">100% Chiropractic</p>
+                        </div>
+                    </div>
+                    <!-- 8. Dr. Rai -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a12ba37647dffce82fc4b9_drrai%400.5x.png"
+                            alt="Dr. Rai" class="testimonial-avatar">
+                        <p class="quote">"We are able to do what we've only wished we could do with other platforms. The
+                            amazing
+                            things is, they just keep getting better and better."</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Dr. Rai</p>
+                            <p class="role">Skyline Chiropractic</p>
+                        </div>
+                    </div>
+                    <!-- 9. Dr. Samantha M. -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a12927008131df73b816dc_samantha%20m%400.5x.png"
+                            alt="Dr. Samantha M." class="testimonial-avatar">
+                        <p class="quote">"I love that it is easy to use, it syncs well with merchant systems, and I like
+                            that it
+                            is a dependable brand with amazing tech support."</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Dr. Samantha M.</p>
+                            <p class="role">100% Chiropractic</p>
+                        </div>
+                    </div>
+                    <!-- 10. Dr. Melissa W. -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a0682965d155b16444bd4b_melissa%20w%400.5x.png"
+                            alt="Dr. Melissa W." class="testimonial-avatar">
+                        <p class="quote">"Anytime I have a question customer service quickly helps me and they are always
+                            friendly."</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Dr. Melissa W.</p>
+                            <p class="role">Chiropractor</p>
+                        </div>
+                    </div>
+                    <!-- 11. Melody G. -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a06df761f8ca9a1e9e7ec4_melody%20g%400.5x.png"
+                            alt="Melody G." class="testimonial-avatar">
+                        <p class="quote">"Above and beyond as usual!"</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Melody G.</p>
+                            <p class="role">The Center for Human Restoration</p>
+                        </div>
+                    </div>
+                    <!-- 12. Dr. Carmen -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a06b6cf2961741196321e8_carmen%400.5x.png"
+                            alt="Dr. Carmen" class="testimonial-avatar">
+                        <p class="quote">"ChiroHD has all of the features we wished we had for years."</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Dr. Carmen</p>
+                            <p class="role">Aware Chiropractic</p>
+                        </div>
+                    </div>
+                    <!-- 13. Dr. Tyler R. -->
+                    <div class="testimonial-card">
+                        <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a0693e882782a8aa3ebd8e_tyler-r%400.5x.png"
+                            alt="Dr. Tyler R." class="testimonial-avatar">
+                        <p class="quote">"Very intuitive, looks clean, notes are quick and customizable. Affordable pricing.
+                            Great support."</p>
+                        <div class="testimonial-author-info">
+                            <p class="author">Dr. Tyler R.</p>
+                            <p class="role">Freedom Restorative Health</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- 2. Shane D. -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a126d36265165d6d679779_shade%20d%400.5x.png"
-                    alt="Shane D." class="testimonial-avatar">
-                <p class="quote">"ChiroHD has helped simplify our office procedures, as well as enhance our patient
-                    experience!"</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Shane D.</p>
-                    <p class="role">Novo Chiropractic</p>
-                </div>
-            </div>
-            <!-- 3. Lacie T. -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a06610432f94f0ea0a57b8_lacie%20t%400.5x.png"
-                    alt="Lacie T." class="testimonial-avatar">
-                <p class="quote">"Their response time and attention to detail has been some of the best customer service
-                    work I have seen."</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Lacie T.</p>
-                    <p class="role">Align Life Office Manager</p>
-                </div>
-            </div>
-            <!-- 4. Dr. Kent & Dr. Jocelyn -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a06d2dc1bfe86c75918611_kent%20jocelyn%400.5x.png"
-                    alt="Dr. Kent & Dr. Jocelyn" class="testimonial-avatar">
-                <p class="quote">"We love the simplicity when training our team ... also love all the features that help
-                    make running a chiropractic office that much more efficient!"</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Dr. Kent & Dr. Jocelyn</p>
-                    <p class="role">Crossroads Chiropractic</p>
-                </div>
-            </div>
-            <!-- 5. Rebecca S. -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a0629819ddf795aa3df25f_rebecca%20s%400.5x.png"
-                    alt="Rebecca S." class="testimonial-avatar">
-                <p class="quote">"We have loved this EHR since switching. It has made it so much simpler for our
-                    patients and our team."</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Rebecca S.</p>
-                    <p class="role">LTL Chiropractic</p>
-                </div>
-            </div>
-            <!-- 6. Danielle W. -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a0653908379c1910a1f8aa_danielle%20w%400.5x.png"
-                    alt="Danielle W." class="testimonial-avatar">
-                <p class="quote">"I've used other softwares for 5+ years and ChiroHD is finally a user friendly option
-                    that is simple to use and has an incredible team."</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Danielle W.</p>
-                    <p class="role">Eden Family Chiropractic</p>
-                </div>
-            </div>
-            <!-- 7. Dr. Mandee H -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a12d4c65d155b164bff80c_mandee%20h%400.5x.png"
-                    alt="Dr. Mandee H" class="testimonial-avatar">
-                <p class="quote">"The support and care about how the product works for our office is like no other
-                    company."</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Dr. Mandee H</p>
-                    <p class="role">100% Chiropractic</p>
-                </div>
-            </div>
-            <!-- 8. Dr. Rai -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a12ba37647dffce82fc4b9_drrai%400.5x.png"
-                    alt="Dr. Rai" class="testimonial-avatar">
-                <p class="quote">"We are able to do what we've only wished we could do with other platforms. The amazing
-                    things is, they just keep getting better and better."</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Dr. Rai</p>
-                    <p class="role">Skyline Chiropractic</p>
-                </div>
-            </div>
-            <!-- 9. Dr. Samantha M. -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a12927008131df73b816dc_samantha%20m%400.5x.png"
-                    alt="Dr. Samantha M." class="testimonial-avatar">
-                <p class="quote">"I love that it is easy to use, it syncs well with merchant systems, and I like that it
-                    is a dependable brand with amazing tech support."</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Dr. Samantha M.</p>
-                    <p class="role">100% Chiropractic</p>
-                </div>
-            </div>
-            <!-- 10. Dr. Melissa W. -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a0682965d155b16444bd4b_melissa%20w%400.5x.png"
-                    alt="Dr. Melissa W." class="testimonial-avatar">
-                <p class="quote">"Anytime I have a question customer service quickly helps me and they are always
-                    friendly."</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Dr. Melissa W.</p>
-                    <p class="role">Chiropractor</p>
-                </div>
-            </div>
-            <!-- 11. Melody G. -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a06df761f8ca9a1e9e7ec4_melody%20g%400.5x.png"
-                    alt="Melody G." class="testimonial-avatar">
-                <p class="quote">"Above and beyond as usual!"</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Melody G.</p>
-                    <p class="role">The Center for Human Restoration</p>
-                </div>
-            </div>
-            <!-- 12. Dr. Carmen -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a06b6cf2961741196321e8_carmen%400.5x.png"
-                    alt="Dr. Carmen" class="testimonial-avatar">
-                <p class="quote">"ChiroHD has all of the features we wished we had for years."</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Dr. Carmen</p>
-                    <p class="role">Aware Chiropractic</p>
-                </div>
-            </div>
-            <!-- 13. Dr. Tyler R. -->
-            <div class="testimonial-card">
-                <img src="https://cdn.prod.website-files.com/640bef7e714c5a171f61c3b9/64a0693e882782a8aa3ebd8e_tyler-r%400.5x.png"
-                    alt="Dr. Tyler R." class="testimonial-avatar">
-                <p class="quote">"Very intuitive, looks clean, notes are quick and customizable. Affordable pricing.
-                    Great support."</p>
-                <div class="testimonial-author-info">
-                    <p class="author">Dr. Tyler R.</p>
-                    <p class="role">Freedom Restorative Health</p>
-                </div>
-            </div>
+            <button class="carousel-btn next" aria-label="Next Testimonial">❯</button>
         </div>
     </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const track = document.getElementById('testimonialTrack');
+            const prevBtn = document.querySelector('.carousel-btn.prev');
+            const nextBtn = document.querySelector('.carousel-btn.next');
+            const cards = document.querySelectorAll('.testimonial-card');
+
+            // Config: How many items to slide at once? 
+            // User requested "shows 4 at a time".
+            // To make it a smooth "motion" carousel, we'll slide 1 by 1, 
+            // but ensure 4 are visible on desktop.
+            let currentIndex = 0;
+            const itemsToShow = 4;
+            const totalItems = cards.length;
+
+            const updateCarousel = () => {
+                // Determine card width dynamically based on container width / itemsToShow
+                // Calculate slide percent. Each card takes up 100% / itemsToShow in CSS ideally.
+                // Or we can just transform by percentage. 
+                // Since we want to show 4, each "slot" is 25%.
+                const slidePercentage = 100 / itemsToShow;
+                const translateX = -(currentIndex * slidePercentage);
+                track.style.transform = `translateX(${translateX}%)`;
+            };
+
+            const nextSlide = () => {
+                if (currentIndex >= totalItems - itemsToShow) {
+                    currentIndex = 0; // Loop back to start
+                } else {
+                    currentIndex++;
+                }
+                updateCarousel();
+            };
+
+            const prevSlide = () => {
+                if (currentIndex <= 0) {
+                    currentIndex = totalItems - itemsToShow; // Loop to end
+                } else {
+                    currentIndex--;
+                }
+                updateCarousel();
+            };
+
+            nextBtn.addEventListener('click', () => {
+                nextSlide();
+                resetInterval();
+            });
+
+            prevBtn.addEventListener('click', () => {
+                prevSlide();
+                resetInterval();
+            });
+
+            // Auto-play
+            let autoSlideInterval = setInterval(nextSlide, 5000);
+
+            const resetInterval = () => {
+                clearInterval(autoSlideInterval);
+                autoSlideInterval = setInterval(nextSlide, 5000);
+            };
+        });
+    </script>
 
     <footer>
         <img src="chirohd_logo.png" alt="ChiroHD"

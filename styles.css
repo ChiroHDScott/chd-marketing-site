@@ -241,10 +241,25 @@ header .logo {
   font-size: 2.5rem;
 }
 
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 40px;
+  /* Space for arrows */
+}
+
+.carousel-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
 .testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* motion */
+  width: 100%;
 }
 
 /* Updated Testimonial Card Styling */
@@ -258,7 +273,54 @@ header .logo {
   border-radius: 16px;
   border: 1px solid #E2E8F0;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+
+  /* Carousel Logic */
+  flex: 0 0 25%;
+  /* Takes up 25% of track */
+  max-width: 25%;
+
+  /* Visual Gap Hack */
+  transform: scale(0.92);
+  /* shrinks card to create gap */
+  transform-origin: center center;
+  transition: transform 0.3s;
+  /* nice hover effect possible */
 }
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 1px solid #E2E8F0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.carousel-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
 
 .testimonial-avatar {
   width: 64px;
@@ -292,16 +354,14 @@ header .logo {
   margin-top: 0.25rem;
 }
 
-/* Footer */
-footer {
-  background: var(--dark-bg);
-  color: #94A3B8;
-  padding: 3rem 1rem;
-  text-align: center;
-  margin-top: 4rem;
+/* Responsive adjustments for carousel */
+@media (max-width: 1024px) {
+  .testimonial-card {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
@@ -319,5 +379,22 @@ footer {
   .social-proof {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  /* Carousel responsive */
+  .testimonial-card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .carousel-container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
