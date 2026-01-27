@@ -1,0 +1,442 @@
+[
+    {
+        "id": 1,
+        "question": "What percentage of chiropractic practices are currently single-location operations?",
+        "options": [
+            "11.6%",
+            "70.5%",
+            "10.7%",
+            "7.1%"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 2,
+        "question": "What percentage of the industry is comprised of solo practitioners (1 provider)?",
+        "options": [
+            "2.7%",
+            "9.4%",
+            "43.9%",
+            "70.5%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 3,
+        "question": "What did 53.2% of clinic owners identify as their single highest business priority?",
+        "options": [
+            "Work-Life Balance",
+            "Hiring/Training",
+            "Growing Patient Volume",
+            "Operational Efficiency"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 4,
+        "question": "Over 70% of clinics report that front desk staff are overwhelmed at least how often?",
+        "options": [
+            "Rarely",
+            "Sometimes",
+            "Often",
+            "Constantly"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 5,
+        "question": "What percentage of all clinics operate with three or fewer support staff members?",
+        "options": [
+            "35.7%",
+            "50.0%",
+            "75.5%",
+            "90.0%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 6,
+        "question": "How many patients per week do 52% of chiropractic clinics see?",
+        "options": [
+            "Fewer than 50",
+            "51-150",
+            "151 or more",
+            "500+"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 7,
+        "question": "How many annual hours are lost on average per clinic to manual scheduling?",
+        "options": [
+            "100 hours",
+            "200 hours",
+            "300+ hours",
+            "500+ hours"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 8,
+        "question": "At $20/hour for a CA, how much money is lost annually on manual scheduling tasks?",
+        "options": [
+            "$2,000+",
+            "$4,500+",
+            "$6,000+",
+            "$10,000+"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 9,
+        "question": "What is the top technology frustration (34.3%) for chiropractic clinics?",
+        "options": [
+            "Cost",
+            "Complexity",
+            "Lack of Integration",
+            "Poor Support"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 10,
+        "question": "What percentage of clinics are 'Very Confident' in their systems if patient volume doubled?",
+        "options": [
+            "Less than 20%",
+            "Less than 40%",
+            "Over 50%",
+            "Over 75%"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 11,
+        "question": "What percentage of practices manage a 'Franken-system' of 2-3 different tools daily?",
+        "options": [
+            "18.6%",
+            "35.2%",
+            "54.4%",
+            "70.5%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 12,
+        "question": "What is the biggest barrier to consistent new patient flow for 32.3% of clinics?",
+        "options": [
+            "No Marketing System",
+            "Time to Manage Marketing",
+            "Low Conversions",
+            "Budget Limitations"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 13,
+        "question": "What percentage of practices operate on marketing budgets under $500 monthly?",
+        "options": [
+            "11.4%",
+            "17.6%",
+            "22.8%",
+            "48.2%"
+        ],
+        "correctAnswer": 4
+    },
+    {
+        "id": 14,
+        "question": "How many clinic owners report having 'No Confidence' in their ability to track marketing ROI?",
+        "options": [
+            "10%",
+            "20%",
+            "30%",
+            "50%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 15,
+        "question": "What is the dominant source of new patients for 63.5% of practices?",
+        "options": [
+            "Social Media",
+            "Google Search",
+            "Personal Referrals",
+            "Other Channels"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 16,
+        "question": "What combined percentage of new patients comes from Google Search and Social Media?",
+        "options": [
+            "9.6%",
+            "13.7%",
+            "26.9%",
+            "63.5%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 17,
+        "question": "What percentage of clinics recognize online reviews as Critical or Important?",
+        "options": [
+            "37%",
+            "50%",
+            "79%",
+            "95%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 18,
+        "question": "How many clinics are stagnant in reputation building, acquiring 0-2 reviews monthly?",
+        "options": [
+            "5.0%",
+            "12.6%",
+            "36.7%",
+            "45.7%"
+        ],
+        "correctAnswer": 4
+    },
+    {
+        "id": 19,
+        "question": "What percentage of clinics have an 'Elite' review acquisition performance (10+ monthly)?",
+        "options": [
+            "5.0%",
+            "12.6%",
+            "36.7%",
+            "45.7%"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 20,
+        "question": "What percentage of clinics have 50 or more total Google reviews?",
+        "options": [
+            "15.5%",
+            "28.0%",
+            "56.5%",
+            "75.0%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 21,
+        "question": "In 'Retention Math,' increasing PVA by just 5 visits can add how much annual revenue?",
+        "options": [
+            "$10,000",
+            "$20,000",
+            "$30,000",
+            "$50,000"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 22,
+        "question": "What is the most common Collection Per Visit Average (CVA) range (48.3%)?",
+        "options": [
+            "Less than $39",
+            "$40-$60",
+            "$61-$89",
+            "$90 or more"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 23,
+        "question": "What percentage of practices report a no-show rate exceeding 5%?",
+        "options": [
+            "36.6%",
+            "41.6%",
+            "63.3%",
+            "85.0%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 24,
+        "question": "A 10% no-show rate at $50 CVA costs a standard clinic nearly how much annually?",
+        "options": [
+            "$10,000",
+            "$20,000",
+            "$40,000",
+            "$60,000"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 25,
+        "question": "What percentage of clinics 'Always' reach out proactively after missed appointments?",
+        "options": [
+            "18.3%",
+            "45.7%",
+            "73.3%",
+            "90.0%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 26,
+        "question": "What percentage of practices 'rarely' or 'never' reach out to lapsed patients?",
+        "options": [
+            "15%",
+            "25%",
+            "40%",
+            "60%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 27,
+        "question": "What is the #1 barrier to patients staying on care plans (45.7%)?",
+        "options": [
+            "Time",
+            "Cost",
+            "Follow-up Systems",
+            "Communication"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 28,
+        "question": "What is the top operational frustration for 50.3% of practitioners?",
+        "options": [
+            "Insurance Claims",
+            "Collections",
+            "SOAP Notes",
+            "Staffing"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 29,
+        "question": "What percentage of practitioners lose 6 or more hours weekly to documentation?",
+        "options": [
+            "7.3%",
+            "18.8%",
+            "26.1%",
+            "42.9%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 30,
+        "question": "How many practitioners lose 10 or more hours per week to documentation tasks?",
+        "options": [
+            "7.3%",
+            "18.8%",
+            "30.9%",
+            "42.9%"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 31,
+        "question": "What percentage of clinics experience claim denials or billing issues at least 'Sometimes'?",
+        "options": [
+            "10.5%",
+            "42.6%",
+            "43.7%",
+            "54.2%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 32,
+        "question": "What percentage of clinics currently use no AI whatsoever in their operations?",
+        "options": [
+            "7.2%",
+            "16.9%",
+            "28.2%",
+            "47.7%"
+        ],
+        "correctAnswer": 4
+    },
+    {
+        "id": 33,
+        "question": "What percentage of clinics plan to 'definitely' or 'possibly' use AI for marketing?",
+        "options": [
+            "35.7%",
+            "47.7%",
+            "74.0%",
+            "91.3%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 34,
+        "question": "How many hours per week do 56.4% of clinic owners work?",
+        "options": [
+            "Less than 40",
+            "40 or more",
+            "60 or more",
+            "70 or more"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 35,
+        "question": "What percentage of clinic owners are 'Very Satisfied' with their work-life balance?",
+        "options": [
+            "15.9%",
+            "23.8%",
+            "60.3%",
+            "85.0%"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "id": 36,
+        "question": "What percentage of owners acknowledge being unsatisfied or experiencing burnout?",
+        "options": [
+            "7.2%",
+            "13.9%",
+            "15.9%",
+            "31.7%"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "id": 37,
+        "question": "What percentage of practitioners maintain a positive outlook on the industry's future?",
+        "options": [
+            "7.2%",
+            "13.9%",
+            "31.7%",
+            "78.9%"
+        ],
+        "correctAnswer": 4
+    },
+    {
+        "id": 38,
+        "question": "What percentage of clinics are 'Very Optimistic' about the industry's future?",
+        "options": [
+            "7.2%",
+            "13.9%",
+            "31.7%",
+            "47.2%"
+        ],
+        "correctAnswer": 4
+    },
+    {
+        "id": 39,
+        "question": "What is the second most common practice type after Single-Location?",
+        "options": [
+            "Multi-Location",
+            "Integrated Health",
+            "Franchise",
+            "Mobile"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "id": 40,
+        "question": "What percentage of practices report a no-show rate of 21% or higher?",
+        "options": [
+            "6.4%",
+            "15.3%",
+            "36.6%",
+            "41.6%"
+        ],
+        "correctAnswer": 1
+    }
+]

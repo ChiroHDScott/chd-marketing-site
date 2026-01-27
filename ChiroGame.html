@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiroHD Quiz Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quiz-assets/quiz.css">
+    <!-- Canvas Confetti for Fireworks -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <div class="game-container">
+        <!-- HEADER -->
+        <header class="game-header">
+            <img src="chirohd_logo.png" alt="ChiroHD" class="logo">
+            <div class="streak-counter hidden" id="streakCounter">
+                🔥 Streak: <span id="streakValue">0</span>
+            </div>
+        </header>
+
+        <!-- START SCREEN -->
+        <section id="startScreen" class="game-screen active">
+            <div class="card">
+                <h1>Test Your Chiropractic Industry Knowledge</h1>
+                <p>How well do you know ChiroHD features? Get 3 in a row for a surprise!</p>
+                <div class="illustration-placeholder">
+                    <span>🧠</span>
+                </div>
+                <button id="startBtn" class="btn btn-primary">Let's Play</button>
+            </div>
+        </section>
+
+        <!-- QUESTION SCREEN -->
+        <section id="questionScreen" class="game-screen">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+            <div class="question-card">
+                <h2 id="questionText">Question goes here?</h2>
+                <div class="options-grid" id="optionsContainer">
+                    <!-- Options injected by JS -->
+                </div>
+            </div>
+            <div class="game-footer">
+                <span id="questionCount">Question 1/5</span>
+            </div>
+        </section>
+
+        <!-- RESULT SCREEN -->
+        <section id="resultScreen" class="game-screen">
+            <div class="card result-card">
+                <div class="result-icon" id="resultIcon">🏆</div>
+                <h2 id="resultTitle">Great Job!</h2>
+                <p id="resultMessage">You scored 5/5</p>
+                <div class="score-summary">
+                    <div class="stat">
+                        <span class="label">Score</span>
+                        <span class="value" id="finalScore">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="label">Best Streak</span>
+                        <span class="value" id="bestStreak">0</span>
+                    </div>
+                </div>
+                <button id="restartBtn" class="btn btn-primary">Play Again</button>
+                <button id="homeBtn" class="btn btn-outline" style="margin-top: 1rem;">Back to Home</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="quiz-assets/quiz.js"></script>
+</body>
+
+</html>
