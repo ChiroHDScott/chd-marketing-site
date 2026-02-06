@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The "Night Vision" Masterclass - ChiroHD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Page-Specific Overrides & Additions */
+
+        .hero {
+            background: linear-gradient(135deg, #F8FAFC 0%, #EFF6FF 100%);
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            display: block;
+            /* Override default grid from styles.css */
+            max-width: 100%;
+            /* Ensure it spans full width before container limits */
+        }
+
+        /* 2-Column Hero Grid */
+        .hero-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 0.8fr;
+            /* Text wider, form narrower */
+            gap: 4rem;
+            align-items: center;
+            padding: 0 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: -webkit-linear-gradient(45deg, #0F172A, #334155);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: left;
+        }
+
+        .hero p.subhead {
+            font-size: 1.25rem;
+            color: #475569;
+            margin-bottom: 2.5rem;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        .hero-form-wrapper {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #E2E8F0;
+        }
+
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 3rem;
+            }
+
+            .hero h1,
+            .hero p.subhead {
+                text-align: center;
+            }
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            /* Generic blue from styles.css? No, brand guidelines say #7C3AED Purple */
+            background-color: #7C3AED;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 14px 0 rgba(124, 58, 237, 0.39);
+        }
+
+        .btn-primary:hover {
+            background-color: #6D28D9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(124, 58, 237, 0.23);
+        }
+
+        /* Header CTA specific */
+        .header-cta {
+            background-color: #7C3AED;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .header-cta:hover {
+            background-color: #6D28D9;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            /* Centered content */
+            padding: 4rem 1.5rem;
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            margin-bottom: 3rem;
+            line-height: 1.7;
+            /* Better readability */
+        }
+
+        .highlight-box {
+            background: #F0FDF4;
+            /* Light green tint for 'money/growth' feel, or stick to clean */
+            border-left: 4px solid #22C55E;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .discovery-grid {
+            display: grid;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .discovery-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+            /* Soft shadow */
+            border: 1px solid #E2E8F0;
+            transition: transform 0.2s;
+        }
+
+        .discovery-item:hover {
+            transform: translateY(-3px);
+            border-color: #CBD5E1;
+        }
+
+        .discovery-item h3 {
+            color: #7C3AED;
+            /* Purple accent */
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Golden Ticket Section */
+        .golden-ticket-section {
+            background: linear-gradient(135deg, #FFFAF0 0%, #FFF7ED 100%);
+            border: 2px solid #FCD34D;
+            border-radius: 20px;
+            padding: 3rem;
+            margin: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .golden-ticket-badge {
+            background: #F59E0B;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+        }
+
+        .golden-ticket-section h2 {
+            color: #92400E;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .golden-ticket-section p {
+            color: #78350F;
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .result-block {
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .result-block h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-bg);
+        }
+
+        .result-tagline {
+            font-size: 1.5rem;
+            color: #7C3AED;
+            font-weight: 700;
+        }
+
+        /* New Hero Enhancements */
+        .partnership-logos {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .partnership-logos img {
+            height: 48px;
+            width: auto;
+        }
+
+        .plus-sign {
+            font-size: 1.5rem;
+            color: #94A3B8;
+            font-weight: 300;
+        }
+
+        .masterclass-tag {
+            display: inline-block;
+            background: #F59E0B;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="https://www.chirohd.com" target="_blank">
+            <img src="chirohd_logo.png" alt="ChiroHD Logo" class="logo">
+        </a>
+
+    </header>
+
+    <section class="hero">
+        <div class="hero-grid">
+            <div class="hero-text">
+                <span class="masterclass-tag">Masterclass</span>
+                <h1>Stop Guessing, Start Growing: The "Night Vision" Masterclass for Scalable Chiropractic Success.</h1>
+                <p class="subhead">Join Dr. Eric Kowalke and Dr. Stephen Franson as they reveal the exact metrics that
+                    separate "overwhelmed practitioners" from "profitable business owners."</p>
+                <div class="partnership-logos">
+                    <img src="chirohd_logo.png" alt="ChiroHD">
+                    <span class="plus-sign">+</span>
+                    <img src="Images/REM_TMlogo_60W.svg" alt="The Remarkable Practice">
+                </div>
+            </div>
+            <div class="hero-form-wrapper">
+                <h3 style="color: #7C3AED; margin-bottom: 1.5rem; text-align: center; font-size: 1.5rem;">Register for
+                    the
+                    Masterclass</h3>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        portalId: "7120555",
+                        formId: "82b6a312-cf4e-4797-8e0c-63e80a0a397c",
+                        region: "na1"
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-content">
+
+        <div class="intro-text">
+            <p><strong>Are you running your practice on "gut feelings" and grit?</strong></p>
+            <p style="margin-top: 1rem;">Most chiropractors are. But grit doesn't scale—systems do.</p>
+            <p style="margin-top: 1rem;">In this exclusive webinar, we pull back the curtain on the <strong>Remarkable
+                    Business Framework</strong>. We aren’t talking about clinical techniques; we’re talking about the
+                economic engine that funds your mission and protects your peace of mind.</p>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 2rem; font-size: 2rem;">What You’ll Discover</h2>
+
+        <div class="discovery-grid">
+            <div class="discovery-item">
+                <h3><span style="font-size: 1.5rem;">👁️</span> The "Night Vision" Strategy</h3>
+                <p>How to use 5 key metrics to see exactly where your business is leaking profit.</p>
+            </div>
+
+            <div class="discovery-item">
+                <h3><span style="font-size: 1.5rem;">🏗️</span> The PPFG Framework</h3>
+                <p>The secret to getting your team 100% aligned with your growth goals (without "yelling louder").</p>
+            </div>
+
+            <div class="discovery-item">
+                <h3><span style="font-size: 1.5rem;">⚖️</span> Practice vs. Business</h3>
+                <p>Why your clinical success might be the very thing stopping your business from scaling.</p>
+            </div>
+
+            <div class="discovery-item">
+                <h3><span style="font-size: 1.5rem;">📈</span> The 6:1 Ratio</h3>
+                <p>The industry standard for marketing ROI that most clinics are missing.</p>
+            </div>
+        </div>
+
+        <div class="golden-ticket-section">
+            <span class="golden-ticket-badge">✨ Exclusive Opportunity</span>
+            <h2>The "Golden Ticket" Opportunity</h2>
+            <p>One lucky webinar registrant wins the Golden Ticket - free pass to <strong>Remarkable Business
+                    Immersion</strong> live in Phoenix this March</p>
+        </div>
+
+        <div class="result-block">
+            <h2>The Result?</h2>
+            <p class="result-tagline">High data. Low drama. More profit. Less stress.</p>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div style="text-align: center; padding: 2rem; opacity: 0.7; font-size: 0.9rem;">
+            <img src="chirohd_logo.png" alt="ChiroHD"
+                style="height: 24px; margin: 0 auto 1rem; filter: grayscale(100%); opacity: 0.8;">
+            <p>&copy; 2026 ChiroHD. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
